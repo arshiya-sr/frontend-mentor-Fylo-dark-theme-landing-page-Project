@@ -7,7 +7,6 @@
     align-items: flex-start;
     background-color: var(--navy-850);
     padding: var(--space-md);
-    font-family: var(--font-family-heads);
     height: 350px;
     position: relative;
 }
@@ -62,7 +61,7 @@
     background-color: var(--navy-900);
     display: flex;
     flex-direction: column;
-    padding: 350px var(--space-md);
+    padding: 350px var(--space-md) 0;
     position: relative;
     align-items: center;
 }
@@ -82,7 +81,6 @@
     top: -250px;
     left: calc(50% - 182px);
     text-align: center;
-    font-family: var(--font-family-heads);
     margin: 0 auto;
 }
 
@@ -94,7 +92,7 @@
     line-height: var(--space-lg);
 }
 
-.card-desc {
+.hero .card-desc {
     width: 90%;
     margin-bottom: var(--space-lg)
 }
@@ -109,14 +107,202 @@
     font-size: var(--fs-md);
     background: var(--cta-gradient);
     cursor: pointer;
+    transition: all 0.2s ease-in;
+}
+
+.cta-btn:hover {
+    transform: scale(1.01) translateY(-5px);
+    box-shadow: 0px 0px 10px black;
+}
+
+/* feature cards */
+
+.feature-cards {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: var(--space-lg);
+    text-align: center;
+    gap: var(--space-lg)
+}
+
+.feature-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 420px;
+}
+
+.feature-card .icon {
+    width: 70px;
+    margin-bottom: var(--space-lg);
+}
+
+.feature-card .card-title {
+    font-size: var(--fs-md);
+    font-weight: var(--fw-bold);
+    margin-bottom: var(--space-md);
+}
+
+.feature-card .card-desc {
+    width: auto;
+}
+
+/* main card */
+
+.main-card {
+    display: flex;
+    flex-direction: column;
+    padding: var(--space-md);
+    align-items: flex-start;
+    max-width: 480px;
+    margin: 140px 0;
+}
+
+.illustration-mid {
+    width: 80%;
+    align-self: center;
+    margin-bottom: var(--space-lg);
+}
+
+.main-card .card-title {
+    text-align: left;
+    font-size: var(--fs-md);
+    margin-bottom: var(--space-md);
+}
+
+.main-card .card-desc {
+    margin-bottom: var(--space-md);
+    font-size: var(--fs-sm);
+    line-height: var(--fs-lg);
+}
+
+.main-card .card-link {
+    text-decoration: none;
+    color: var(--teal-200);
+    cursor: pointer;
+    display: flex;
+    align-content: center;
+    gap: var(--space-sm);
+    border-bottom: 1px solid var(--teal-200);
+    width: fit-content;
+    padding-bottom: 6px;
+}
+
+/* comments */
+
+.comments-section {
+    padding: var(--space-sm);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: var(--space-lg);
+    margin-bottom: 450px;
+}
+
+.comment {
+    background-color: var(--navy-800);
+    padding: var(--space-lg);
+    border-radius: var(--radius-sm);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: var(--space-md)
+}
+
+.comment-text {
+    line-height: var(--fs-lg);
+}
+
+.profile-wrapper {
+    display: flex;
+    width: fit-content;
+    align-items: center;
+    gap: var(--space-sm);
+    font-size: var(--fs-xxs)
+}
+
+.profile-icon {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+}
+
+.text-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.comment:first-child {
+    position: relative;
+}
+
+.quotation-mark {
+    position: absolute;
+    top: -45px;
+    left: 8px;
+}
+
+/* end card */
+
+.end-card {
+    position: absolute;
+    bottom: -220px;
+    padding: var(--space-xl) var(--space-md);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--navy-850);
+    width: 420px;
+    height: 420px;
+    border-radius: var(--radius-md);
+    text-align: center;
+}
+
+.end-card .card-title {
+    margin-bottom: var(--space-lg);
+}
+
+.end-card .card-desc {
+    margin-bottom: var(--space-lg);
+    line-height: var(--fs-lg);
+    width: 80%;
+}
+
+.email {
+    height: 60px;
+    width: 90%;
+    margin-bottom: var(--space-md);
+    border-radius: var(--radius-half);
+    padding: var(--space-md);
+}
+
+.email::placeholder {
+    opacity: 0.4;
+}
+
+.end-card .cta-btn {
+    width: 90%;
+    margin-bottom: 2px;
 }
 
 /* footer */
+
 .footer {
-    font-size: 0.6875rem;
-    text-align: center;
+    background-color: var(--navy-950);
+    padding: var(--space-lg);
+    margin: 300px 0 0;
 }
 
 .footer a {
     color: hsl(228, 45%, 44%);
+}
+
+/* transition fix */
+
+@media (prefers-reduced-motion: reduce) {
+    * {
+        transition: all 0.01ms linear;
+    }
 }
