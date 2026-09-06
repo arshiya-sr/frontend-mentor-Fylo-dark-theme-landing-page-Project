@@ -79,16 +79,19 @@
     <article class="main-card">
       <img src="./images/illustration-stay-productive.png" alt="three persons helping each other by recommendations"
         class="illustration-mid">
-      <h2 class="card-title">Stay productive, wherever you are</h2>
-      <p class="card-desc"> Never let location be an issue when accessing your files. Fylo has you covered for all of
-        your file
-        storage needs.
-      </p>
-      <p class="card-desc">Securely share files and folders with friends, family and colleagues for live collaboration.
-        No email
-        attachments required.</p>
-      <a target="_self" href="#" class="card-link">See how Fylo works <img src="./images/icon-arrow.svg"
-          alt="arrow pointing right side"></a>
+      <div>
+        <h2 class="card-title">Stay productive, wherever you are</h2>
+        <p class="card-desc"> Never let location be an issue when accessing your files. Fylo has you covered for all of
+          your file
+          storage needs.
+        </p>
+        <p class="card-desc">Securely share files and folders with friends, family and colleagues for live
+          collaboration.
+          No email
+          attachments required.</p>
+        <a target="_self" href="#" class="card-link">See how Fylo works <img src="./images/icon-arrow.svg"
+            alt="arrow pointing right side"></a>
+      </div>
     </article>
 
     <section class="comments-section">
@@ -138,31 +141,55 @@
       <p class="card-desc">It only takes a minute to sign up and our free starter tier is extremely generous. If you
         have any
         questions, our support team would be happy to help you.</p>
-      <input placeholder="email@example.com" type="email" class="email" />
-      <button class="cta-btn">Get Started For Free</button>
+      <div class="btn-wrapper">
+        <input placeholder="email@example.com" type="email" class="email" />
+        <button class="cta-btn">Get Started For Free</button>
+      </div>
     </article>
 
   </main>
   <footer class="footer">
-    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-    dolore magna aliqua
+    <section class="footer-main">
+      <section class="footer-section">
+        <img src="./images/logo.svg" alt="Fylo logo" class="logo">
+        <div class="wrapper">
+          <img src="./images/icon-location.svg" alt="location icon, pin" class="icon tall">
+          <p> Lorem ipsum dolor sit
+            amet,
+            consectetur
+            adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+            dolore magna aliqua</p>
+        </div>
+      </section>
+      <section class="footer-section ">
+        <address class="address">
+          <p><img src="./images/icon-phone.svg" alt="phone icon" class="icon"><a class="link" href="#"
+              target="_blank">+1-543-123-4567</a></p>
+          <p><img src="./images/icon-email.svg" alt="email icon" class="icon"><a class="link" href="#"
+              target="_blank">example@fylo.com</a></p>
+        </address>
+      </section>
 
-    +1-543-123-4567
-    example@fylo.com
-
-    About Us
-    Jobs
-    Press
-    Blog
-
-    Contact Us
-    Terms
-    Privacy
-
-
-    <p>Challenge by <a rel="noopener noreferrer" target="_blank"
-        href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a>.</p>
-    <p>Coded by <a rel="noopener noreferrer" target="_blank" href="https://github.com/arshiya-sr">Arshiya_sr.</a></p>
+      <section class="footer-links">
+        <div>
+          <p><a href="#" target="_self" class="link">About Us</a></p>
+          <p><a href="#" target="_self" class="link">Jobs</a></p>
+          <p><a href="#" target="_self" class="link">Press</a></p>
+          <p><a href="#" target="_self" class="link">Blog</a></p>
+        </div>
+        <div>
+          <p><a href="#" target="_self" class="link">Contact Us</a></p>
+          <p><a href="#" target="_self" class="link">Terms</a></p>
+          <p><a href="#" target="_self" class="link">Privacy</a></p>
+        </div>
+      </section>
+    </section>
+    <section class="credits">
+      <p>Challenge by <a class="credit" rel="noopener noreferrer" target="_blank"
+          href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a>.</p>
+      <p>Coded by <a class="credit" rel="noopener noreferrer" target="_blank"
+          href="https://github.com/arshiya-sr">Arshiya_sr.</a></p>
+    </section>
   </footer>
 </body>
 
