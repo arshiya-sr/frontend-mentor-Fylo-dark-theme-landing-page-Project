@@ -34,8 +34,8 @@ preview mobile: ![Preview Mobile](./images/Frontend-Mentor-Fylo-landing-page-wit
 
 ### Links
 
-- Solution URL: [solution URL](https://github.com/arshiya-sr/frontend-mentor-Bento-grid-Project)
-- Live Site URL: [live site URL](https://arshiya-sr.github.io/frontend-mentor-Bento-grid-Project/)
+- Solution URL: [solution URL](https://github.com/arshiya-sr/frontend-mentor-Fylo-dark-theme-landing-page-Project)
+- Live Site URL: [live site URL](https://arshiya-sr.github.io/frontend-mentor-Fylo-dark-theme-landing-page-Project/)
 
 ## My process
 
