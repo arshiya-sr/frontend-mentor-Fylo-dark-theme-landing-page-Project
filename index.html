@@ -6,7 +6,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   <link rel="stylesheet" href="./CSS/main.css" />
-  <link rel="stylesheet" href="./CSS/layout.css" />
   <link rel="stylesheet" href="./CSS/styles.css" />
   <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
@@ -16,22 +15,18 @@
 <body>
 
   <header class="header">
-    <img class="logo" alt="Fylo logo" src="./images/logo.svg" />
-    <h1 class="sr-only">Fylo</h1>
+    <section class="header-section">
+      <img class="logo" alt="Fylo logo" src="./images/logo.svg" />
+      <h1 class="sr-only">Fylo</h1>
 
-    <nav class="navigation">
-      <ul class="navigation-list">
-        <li><a class="link" href="#" target="_self">Features</a></li>
-        <li><a class="link" href="#" target="_self">Team</a></li>
-        <li><a class="link" href="#" target="_self">Sign In</a></li>
-      </ul>
-    </nav>
-
-    <img class="curvy" alt=" " aria-hidden="true" src="./images/bg-curvy-mobile.svg" />
-
-  </header>
-
-  <main class="main">
+      <nav class="navigation">
+        <ul class="navigation-list">
+          <li><a class="link" href="#" target="_self">Features</a></li>
+          <li><a class="link" href="#" target="_self">Team</a></li>
+          <li><a class="link" href="#" target="_self">Sign In</a></li>
+        </ul>
+      </nav>
+    </section>
 
     <article class="hero">
       <img class="illustration-intro" alt="two men filling a folder with huge files and images"
@@ -43,6 +38,14 @@
 
       <button class="cta-btn">Get Started</button>
     </article>
+
+    <img class="curvy" alt="" aria-hidden="true" src="./images/bg-curvy-mobile.svg" />
+
+  </header>
+
+  <main class="main">
+
+
 
     <section class="feature-cards">
       <div class="feature-card">
@@ -106,7 +109,7 @@
         <div class="profile-wrapper">
           <img class="profile-icon" src="./images/profile-1.jpg" alt="a man with black hair and beard">
           <div class="text-wrapper">
-            <h2 class="commenter-name">Satish Patel</h2>
+            <p class="commenter-name">Satish Patel</p>
             <p class="commenter-position">Founder & CEO, Huddle</p>
           </div>
         </div>
@@ -118,7 +121,7 @@
         <div class="profile-wrapper">
           <img class="profile-icon" src="./images/profile-2.jpg" alt="a white skinned man without beard">
           <div class="text-wrapper">
-            <h2 class="commenter-name">Bruce McKenzie</h2>
+            <p class="commenter-name">Bruce McKenzie</p>
             <p class="commenter-position">Founder & CEO, Huddle</p>
           </div>
         </div>
@@ -130,7 +133,7 @@
         <div class="profile-wrapper">
           <img class="profile-icon" src="./images/profile-3.jpg" alt="a white skinned girl with long black hair">
           <div class="text-wrapper">
-            <h2 class="commenter-name">Iva Boyd</h2>
+            <p class="commenter-name">Iva Boyd</p>
             <p class="commenter-position">Founder & CEO, Huddle</p>
           </div>
         </div>
@@ -187,9 +190,9 @@
       </section>
 
       <section class="social-icons">
-        <img src="./images/icon-facebook.svg" alt="facebook logo" class="icon">
-        <img src="./images/icon-twitter.svg" alt="twitter logo" class="icon">
-        <img src="./images/icon-instagram.svg" alt="instagram logo" class="icon">
+        <a href="#" target="_blank"><img src="./images/icon-facebook.svg" alt="facebook logo" class="icon"></a>
+        <a href="#" target="_blank"><img src="./images/icon-twitter.svg" alt="twitter logo" class="icon"></a>
+        <a href="#" target="_blank"><img src="./images/icon-instagram.svg" alt="instagram logo" class="icon"></a>
       </section>
     </section>
     <section class="credits">
